@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>PEDIDOS | Jade</title>
+</head>
+<body>
+    <form autocomplete="off">
+    <div class="corpo">
+        <div class="sobre">
+            <h1>Eu sou a Jade!</h1>
+            <br>
+            <p>Faça o seu pedido!</p>
+        </div>
+        <div class="forme">
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelinput">Nome Completo:</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="telefone" id="telefone" class="inputUser" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                <label for="cpf" class="labelinput">Telefone:</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="nome" class="labelinput">Email:</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="pedido" id="pedido" class="inputUser" required>
+                <label for="phone" class="labelinput" rows="10" >Pedido:</label>
+            </div>
+
+            <input type="submit" name="submit"  id="submit" value="Enviar" onclick="sendwpp();funcao1()" />
+                <script>
+                    function funcao1()
+{
+alert("Dados enviados com sucesso!");
+}
+                </script>
+        </div>
+    </div>
+    </form>
+    
+</body>
+</html>
